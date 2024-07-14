@@ -24,7 +24,7 @@ export default function ProductOptions({ product, count, setCount }: Props) {
         <TotalPrice sale={product.sale} count={count} />
       </div>
       <div className="mt-6">
-        <ProductButtons />
+        <ProductButtons product={product} count={count} />
       </div>
     </div>
   );
