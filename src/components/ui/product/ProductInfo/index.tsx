@@ -7,7 +7,7 @@ import ProductDetails from './ProductDetails';
 import { useCallback, useState } from 'react';
 
 import { TABS } from '@/constants/tabs';
-import Tab from '../Tab';
+import ProductTab from './ProductTab';
 import ProductOptions from './ProductOptions';
 
 interface Props {
@@ -48,7 +48,7 @@ export default function ProductInfo({ product }: Props) {
         <nav>
           <ul className="flex md:text-xl text-sm font-medium tracking-wider justify-between text-center">
             {TABS.map((tab, index) => (
-              <Tab key={index} item={tab} index={index} reviewCount={product.reviewCount} />
+              <ProductTab key={index} item={tab} index={index} reviewCount={product.reviewCount} />
             ))}
           </ul>
         </nav>

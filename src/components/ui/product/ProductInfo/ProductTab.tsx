@@ -9,7 +9,7 @@ interface Props {
   reviewCount: number;
 }
 
-export default function Tab({ item, index, reviewCount }: Props) {
+export default function ProductTab({ item, index, reviewCount }: Props) {
   const { tab, changeTab } = useTabStore();
 
   return (
