@@ -16,6 +16,24 @@
   }
 }
 
+@layer base {
+  button,
+  a {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  main {
+    @apply md:mt-10 mt-5;
+  }
+
+  .container {
+    @apply xl:px-0 px-4;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
