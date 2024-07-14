@@ -1,11 +1,11 @@
-import { Category } from '@/types/Category';
+import { ICategory } from '@/types/Category';
 import Categories from './Categories';
 import LeftNavbar from './Logo';
 import Search from './Search';
 import RightNavbar from './RightNavbar';
 
 interface Props {
-  categories: Category[];
+  categories: ICategory[];
 }
 
 export default function Header({ categories }: Props) {

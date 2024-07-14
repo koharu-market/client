@@ -1,11 +1,11 @@
 'use client';
 
-import { Category } from '@/types/Category';
+import { ICategory } from '@/types/Category';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 interface Props {
-  categories: Category[];
+  categories: ICategory[];
 }
 
 export default function Categories({ categories }: Props) {
