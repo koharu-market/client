@@ -1,6 +1,6 @@
-import { Category } from '@/types/Category';
+import { ICategory } from '@/types/Category';
 
-export const categories: Category[] = [
+export const categories: ICategory[] = [
   {
     id: 2,
     name: '인테리어',

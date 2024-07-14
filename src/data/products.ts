@@ -1,4 +1,4 @@
-import { IProduct } from '@/types/Product';
+import { IProduct, IProductDetail } from '@/types/Product';
 
 export const products: IProduct[] = [
   {
@@ -52,3 +52,28 @@ export const products: IProduct[] = [
     reviewCount: 10,
   },
 ];
+
+export const product: IProductDetail = {
+  id: 1,
+  name: 'Handmade Vase',
+  content: 'content',
+  price: 40000,
+  sale: 3000,
+  createdAt: new Date(),
+  updatedAt: new Date(),
+  count: 4,
+  deleted: 'N',
+  images: ['/dummy/product.jpg'],
+  seoTitle: 'seoTitle',
+  buyMinCount: 2,
+  buyMaxCount: 4,
+  displayOption: 'Y',
+  type1: 'Y', // 추천상품
+  type2: 'Y', // 신상품
+  type3: 'Y', // 인기상품
+  type4: 'Y', // 할인상품
+  // optionSubject: stringnumber,
+  // supplySubject: stringnumber,
+  score: 10,
+  reviewCount: 20,
+};
