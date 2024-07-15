@@ -1,3 +1,5 @@
+import { COMPANY_ADDRESS } from '@/constants/address';
+
 export default function Footer() {
   return (
     <footer className="bg-primary-200">
@@ -12,7 +14,7 @@ export default function Footer() {
           </dl>
           <dl className="flex gap-2.5">
             <dt className="font-bold">주소</dt>
-            <dd>부산시 강서구 신호산단1로 140번길 8 - 16 에이스빌 상가 1층</dd>
+            <dd>{COMPANY_ADDRESS}</dd>
           </dl>
           <dl className="flex gap-2.5">
             <dt className="font-bold">사업자등록번호</dt>

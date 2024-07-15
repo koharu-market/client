@@ -1,0 +1,25 @@
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+
+  tr {
+    border-bottom: 1px solid #ededed;
+  }
+
+  th,
+  td {
+    padding: 12px 6px;
+    text-align: left;
+    font-size: 14px;
+  }
+
+  th {
+    color: #757575;
+    width: 150px;
+    font-weight: 400;
+  }
+
+  td {
+    color: #424242;
+  }
+}
