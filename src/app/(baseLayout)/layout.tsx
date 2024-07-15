@@ -1,4 +1,5 @@
 import Layout from '@/components/layout';
+import Footer from '@/components/layout/Footer';
 import Header from '@/components/layout/Header';
 import Main from '@/components/layout/Main';
 import { categories } from '@/data/categories';
@@ -12,6 +13,7 @@ export default async function BaseLayout({ children }: Props) {
     <Layout>
       <Header categories={categories} />
       <Main>{children}</Main>
+      <Footer />
     </Layout>
   );
 }
