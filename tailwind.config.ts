@@ -30,6 +30,9 @@ const config: Config = {
       height: {
         screen: '100dvh',
       },
+      borderWidth: {
+        '1': '1px',
+      },
     },
   },
   plugins: [],
