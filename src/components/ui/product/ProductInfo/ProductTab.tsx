@@ -13,7 +13,7 @@ export default function ProductTab({ item, index, reviewCount }: Props) {
   const { tab, changeTab } = useTabStore();
 
   return (
-    <li key={index} className="flex-1">
+    <div>
       <Link
         activeClass="active"
         to={item}
@@ -39,6 +39,6 @@ export default function ProductTab({ item, index, reviewCount }: Props) {
           <span>{item}</span>
         )}
       </Link>
-    </li>
+    </div>
   );
 }

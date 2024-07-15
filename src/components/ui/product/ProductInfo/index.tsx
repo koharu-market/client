@@ -44,11 +44,13 @@ export default function ProductInfo({ product }: Props) {
         </div>
       </div>
       {/* tab */}
-      <div className="sticky md:top-24 top-[60px] mt-14 bg-white md:border-b-0 border-b">
+      <div className="sticky md:top-24 top-[60px] mt-14 bg-white md:border-b-0 border-b z-10">
         <nav>
           <ul className="flex md:text-xl text-sm font-medium tracking-wider justify-between text-center">
             {TABS.map((tab, index) => (
-              <ProductTab key={index} item={tab} index={index} reviewCount={product.reviewCount} />
+              <li key={index} className="flex-1">
+                <ProductTab key={index} item={tab} index={index} reviewCount={product.reviewCount} />
+              </li>
             ))}
           </ul>
         </nav>

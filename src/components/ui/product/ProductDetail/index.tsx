@@ -18,14 +18,14 @@ export default function ProductDetail({ product }: Props) {
       <Element name={TABS[0]}>
         <Info content={product.content} />
       </Element>
-      <Element name={TABS[1]} className="mt-[1800px]">
-        {/* <Review productId={product.id} score={product.score} reviewCount={product.reviewCount} /> */}
-        <Review />
+      <Element name={TABS[1]}>
+        <Review productId={product.id} score={product.score} reviewCount={product.reviewCount} />
+        {/* <Review /> */}
       </Element>
-      <Element name={TABS[2]} className="mt-[1800px]">
+      <Element name={TABS[2]}>
         <Question />
       </Element>
-      <Element name={TABS[3]} className="mt-[1800px]">
+      <Element name={TABS[3]}>
         <Delivery />
       </Element>
     </div>

@@ -7,7 +7,7 @@ interface Props {
 
 export default function Score({ score, reviewCount, size = 'sm' }: Props) {
   return (
-    <div className="mt-1 inline-flex items-center gap-2">
+    <div className="inline-flex items-center gap-2">
       <span
         style={{
           backgroundImage: `url('/images/score.png')`,

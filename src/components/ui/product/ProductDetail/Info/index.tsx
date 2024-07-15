@@ -5,7 +5,8 @@ interface Props {
 export default function Info({ content }: Props) {
   return (
     <div className="pt-16 pb-14">
-      <div className="flex justify-center flex-col items-center" dangerouslySetInnerHTML={{ __html: content }} />
+      <h2>상품정보</h2>
+      <div className="text-center whitespace-pre-line mt-5" dangerouslySetInnerHTML={{ __html: content }} />
     </div>
   );
 }
