@@ -26,11 +26,19 @@
     -webkit-tap-highlight-color: transparent;
   }
   main {
-    @apply md:mt-10 mt-5;
+    @apply md:my-10 my-5;
+  }
+
+  h2 {
+    @apply text-2xl font-bold;
   }
 
   .container {
     @apply xl:px-0 px-4;
+  }
+
+  img {
+    @apply w-full h-full;
   }
 }
 
