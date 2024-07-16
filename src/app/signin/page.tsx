@@ -1,9 +1,8 @@
 'use client';
 
 import { useInput } from '@/hooks/useInput';
-// import { useState } from 'react';
 
-export default function SignInPage() {
+export default function Page() {
   const [id, setId] = useInput('');
   const [password, setPassword] = useInput('');
 
